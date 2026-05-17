@@ -1,13 +1,13 @@
 import random
 
 print("--- 欢迎来到猜数字小游戏 ---")
-# 随机生成一个 0 到 20 之间的数字
-secret_number = random.randint(0, 20)
+# 随机生成一个 0 到 30 之间的数字
+secret_number = random.randint(0, 30)
 guess = None
 
 while guess != secret_number:
     # 获取用户输入
-    user_input = input("请输入你猜的数字 (0-20): ")
+    user_input = input("请输入你猜的数字 (0-30): ")
     
     # 简单的错误处理
     if not user_input.isdigit():
